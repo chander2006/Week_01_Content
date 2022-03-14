@@ -341,7 +341,7 @@ skill_levels <- factor(c("No experience", "Basic", "Intermediate", "Advanced"))
   ggplot(aes(x = Level,
              y = Tool,
              size = n,
-             text = glue::glue("{n} students"))) +
+             text = glue::glue("{n} student{ifelse(n == 1, '', 's')}"))) +
   geom_point(color = "#006096") +
   scale_x_discrete(position = "top") +
   labs(x = "",
