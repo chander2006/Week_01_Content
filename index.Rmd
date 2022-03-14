@@ -1191,7 +1191,7 @@ class: content-slide
 
 ## Complex
 
-If you remember back to you algebra coursework in high school, you will recall working with imaginary numbers ($i =\sqrt{-1}$) and then, eventually, complex numbers($z = a + bi$). Complex numbers are numbers that include a real and imaginary part. We will not be working with complex numbers in this course, though they are extremely important to understand for specific industries.
+If you remember back to your algebra coursework in high school, you will recall working with imaginary numbers  $(i =\sqrt{-1})$ and then, eventually, complex numbers $(z = a + bi)$. Complex numbers are numbers that include a real and imaginary part. We will not be working with complex numbers in this course, though they are extremely important to understand for specific industries.
 
 ```{r, eval=FALSE}
 complex_numbers <- c(1 + 2i, 3 - 4i, -5 + 6i, -7 - 8i)
