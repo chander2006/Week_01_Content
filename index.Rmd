@@ -186,9 +186,9 @@ class: content-slide
 
 5.    Joining & Reshaping Datasets
 
-6.    Creating Functions
+6.    Manipulation of Strings, Factors, and Datetimes
 
-7.    Manipulation of Strings, Factors, and Datetimes
+7.    Creating Functions
 
 8.    Functional Programming]
 
