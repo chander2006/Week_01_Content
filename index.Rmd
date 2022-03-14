@@ -1487,15 +1487,15 @@ class: content-slide
 
 ## `r emo::ji("fork")` Fork a repository 
 
-1.  Open the [assignment URL](https://classroom.github.com/a/8DoUa_KP)
+-  Open the [assignment URL](https://classroom.github.com/a/8DoUa_KP)
 
 ```{r, eval=FALSE}
 https://classroom.github.com/a/8DoUa_KP
 ```
 
-2.  Accept the assignment.
+-  Accept the assignment.
 
-3.  Open the newly created repository. It will be named `week-01-assignment-<YOUR GITHUB USERNAME>`.
+-  Open the newly created repository. It will be named `week-01-assignment-<YOUR GITHUB USERNAME>`.
 
 ---
 
