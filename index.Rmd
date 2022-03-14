@@ -49,7 +49,8 @@ pacman::p_load(
   gt,
   gargle,
   googlesheets4,
-  ggtext
+  ggtext,
+  plotly
 )
 
 gs4_auth(
@@ -60,11 +61,6 @@ gs4_auth(
   use_oob = gargle::gargle_oob_default(),
   token = NULL
 )
-
-# googlesheets4::sheets_auth(
-#   cache = ".secrets",
-#   email = "ryanh@udel.edu"
-# )
 ```
 
 ```{r xaringanExtra-search, eval=T, echo=FALSE}
@@ -319,7 +315,10 @@ class: content-slide
 
 # Who is in this course?
 
-```{r, echo=FALSE, fig.alt="Bubble chart demonstratign skill level of participants in the Foundations of R course", out.width="100%"}
+#### Skill Level of Foundations of R Course Participants
+As of *`r format(Sys.Date(), format = '%B %e, %Y')`* at *`r format(Sys.time(), format = '%I:%M %p')`*
+
+```{r, echo=FALSE, fig.alt="Bubble chart demonstrating skill level of participants in the Foundations of R course", out.width="100%", out.height="350px"}
 # Note: you will not be able to replicate this code without access to this file.
 intro <- read_sheet("https://docs.google.com/spreadsheets/d/1121-5MwLvXQfAJcr8cBmAf_BA81Kjv95XiImFm0mrCc/edit?resourcekey#gid=1973707909")
 
@@ -327,7 +326,8 @@ tool_levels <- factor(c("Excel (or a similar spreadsheet tool)", "SQL", "SPSS, J
 
 skill_levels <- factor(c("No experience", "Basic", "Intermediate", "Advanced"))
 
-intro %>% 
+{
+  intro %>% 
   select(starts_with("Please indicate your skill")) %>% 
   pivot_longer(cols = everything(),
                names_to = "Tool",
@@ -340,18 +340,22 @@ intro %>%
   count(Tool, Level, sort = T) %>% 
   ggplot(aes(x = Level,
              y = Tool,
-             size = n)) +
+             size = n,
+             text = glue::glue("{n} students"))) +
   geom_point(color = "#006096") +
   scale_x_discrete(position = "top") +
   labs(x = "",
        y = "",
-       title = "<b>Skill Level of Foundations of R Course Participants</b>",
+       # title = "<b>Skill Level of Foundations of R Course Participants</b>",
        subtitle = glue::glue("As of <i>{format(Sys.Date(), format = '%B %e, %Y')}</i> at <i>{format(Sys.time(), format = '%I:%M %p')}</i>")) +
   theme_minimal() +
   theme(legend.position = "none",
         plot.title = element_markdown(),
         plot.subtitle = element_markdown(),
         axis.text.x = element_text(face = "bold"))
+  } %>% 
+  ggplotly(tooltip = "text") %>% 
+  config(displayModeBar = FALSE)
 ```
 
 
@@ -1469,7 +1473,7 @@ We're following along with [Happy Git with R](https://happygitwithr.com/hello-gi
 
 2. Enter the following commands:
 
-```{bash}
+```{bash, eval=FALSE}
 git config --global user.name 'Jane Doe'
 git config --global user.email 'jane@example.com'
 git config --global --list
