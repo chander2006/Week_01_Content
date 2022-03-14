@@ -172,6 +172,24 @@ class: content-slide
 .pull-right[<br><br><br><img src="https://GitHub.GitHubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="GitHub logo" style="width:400px;" class="center">]
 
 ---
+
+class: content-slide
+
+# How do you learn to program?
+
+--
+### Focus on identifying projects that you care about
+The work becomes much more meaningful to solve when you have specific questions that you're focused on answering. Also, if you're looking for a new job, it helps you to build a portfolio.
+
+--
+### Identify and develop a community to support you
+One of R's strengths is its community. There are a lot of places you can find one - from Twitter to Slack. We'll build one in our classroom via Slack that extends beyond our time in the classroom together.
+
+--
+### Learn how to ask for help
+It's challenging to know what to do when you encounter an error or a warning as you first get started. Every issue that you have to solve is a new issue. We'll aim to explicitly teach how to Google your way out of issues throughout this course.
+
+---
 class: content-slide
 
 # Weekly Topics
@@ -366,23 +384,6 @@ layout: false
 
 # R was invented by statisticians,<br> for statisticians
 
----
-
-class: content-slide
-
-# How do you learn to program?
-
---
-### Focus on identifying projects thats you care about
-The work becomes much more meaningful to solve when you have specific questions that you're focused on answering. Also, if you're looking for a new job, it helps you to build a portfolio.
-
---
-### Identify and develop a community to support you
-One of R's strengths is its community. There are a lot of places you can find one - from Twitter to Slack. We'll build one in our classroom via Slack that extends beyond our time in the classroom together.
-
---
-## Learn how to ask for help
-It's challenging to know what to do when you encounter an error or a warning as you first get started. Every issue that you have to solve is a new issue. We'll aim to explicitly teach how to Google your way out of issues throughout this course.
 ---
 
 class: content-slide
