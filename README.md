@@ -1,6 +1,6 @@
 # Week 1 - Understanding the R Programming Environment
 
-## Description and Topics
+## :bangbang: Description and Topics
 
 In the first week of the course, we discuss the basics of the R programming language and the most common integrated development environment (IDE) used with R - RStudio. Topics covered will include:
 
@@ -11,7 +11,7 @@ In the first week of the course, we discuss the basics of the R programming lang
 -   Basic operations in R
 -   Data types and classes
 
-## Assignment
+## :desktop_computer: Assignment
 
 |                   |                               |
 |-------------------|-------------------------------|
@@ -24,14 +24,20 @@ In the first week of the course, we discuss the basics of the R programming lang
 
 Complete all questions in the `Week_01_Assignment.Rmd` file.
 
-1.  Fork this repository.
-2.  Clone the repository to your local machine.
-3.  Answer questions in the `Week_01_Assignment.Rmd` file.
-4.  Push your final code to the remote repository.
-5.  Add \@rharrington31 as a collaborator in the remote repository.
-6.  Create an issue to indicate you're done.
+1.  Open the [assignment URL](https://classroom.github.com/a/8DoUa_KP)
+2.  Accept the assignment.
+3.  Open the newly created repository. It will be named `week-01-assignment-<YOUR GITHUB USERNAME>`.
+4.  Clone the repository to your local machine.
+5.  Answer questions in the `Week_01_Assignment.Rmd` file.
+6.  Periodically `add`-`commit`-`push` your work.
+7.  Knit your RMarkdown file to HTML.
+8.  Push your final code.
+9.  Create an issue to indicate you're done.
 
-## Readings
+## :clipboard: Survey
+If you feel it would be valuable, please take the [survey about this past week's class](https://docs.google.com/forms/d/e/1FAIpQLSfN3sOBG5PqiFdGUWO5IlUsNvcFYQQkPpBDfTATUhYkEzEWRQ/viewform).
+
+## :books: Readings
 
 #### Textbook
 
