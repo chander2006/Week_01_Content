@@ -1436,8 +1436,8 @@ class: content-slide
 Tonight we'll do a few things to get you started with using git:
 
 1. **Connect** your local machine to your remote account on GitHub
-2. **Fork** your own version of the `week_01` homework repository
-3. **Clone** the forked repository to your local machine
+2. **Create** your first homework assignment repository
+3. **Clone** the repository to your local machine
 
 ---
 
@@ -1469,7 +1469,7 @@ We're following along with [Happy Git with R](https://happygitwithr.com/hello-gi
 
 2. Enter the following commands:
 
-```
+```{bash}
 git config --global user.name 'Jane Doe'
 git config --global user.email 'jane@example.com'
 git config --global --list
@@ -1483,17 +1483,15 @@ class: content-slide
 
 ## `r emo::ji("fork")` Fork a repository 
 
-1. Navigate to our [course organization on GitHub](https://github.com/UD-PCS-Foundations-of-R-Fall-2021)
+1.  Open the [assignment URL](https://classroom.github.com/a/8DoUa_KP)
 
-2. Go to the [`week_01`](https://github.com/UD-PCS-Foundations-of-R-Fall-2021/week_01) repository
+```{r, eval=FALSE}
+https://classroom.github.com/a/8DoUa_KP
+```
 
-3. Select `Fork` in the upper right hand corner
+2.  Accept the assignment.
 
-4. Select your personal profile to fork the code to. This is likely the only option you'll have!
-
-5. A new version of the code repository will now exist on your personal GitHub account. It will be named `<your_user_name>/week_01`
-
-6. You have successfully forked the repository!
+3.  Open the newly created repository. It will be named `week-01-assignment-<YOUR GITHUB USERNAME>`.
 
 ---
 
@@ -1527,7 +1525,7 @@ Your homework assignment should now be on your local machine.
 
 Complete your assignment in the `Week_01_Assignment.Rmd` file.
 
-In normal weeks, your homework will be due by 5:59 pm on the day of the next class (i.e., this would normally be due 10/4 at 5:59 pm).
+In normal weeks, your homework will be due by 5:59 pm on the day of the next class (i.e., this would normally be due March 21, 2022 at 5:59 pm).
 
 For this week, we'll submit your assignment together at the beginning of the next class.
 
@@ -1548,6 +1546,25 @@ You can also direct message people - also on the left hand side of the screen.
 If you're running into any git trouble - now or throughout the course - try leaving a message in the **`help_git`** channel.]
 
 .pull-right[<img src="images/Slack.png" alt="Slack screenshot" style="width:600px" class="rounded-corners">]
+
+---
+
+class: content-slide
+
+.center[
+### Take a few minutes to complete this brief survey during the week.
+<br>
+<br>
+<br>
+# `r emo::ji("clipboard")` [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfN3sOBG5PqiFdGUWO5IlUsNvcFYQQkPpBDfTATUhYkEzEWRQ/viewform)
+<br>
+<br>
+<br>
+*If the link above is not working, copy this into your browser.*
+```{r, eval=FALSE}
+https://docs.google.com/forms/d/e/1FAIpQLSfN3sOBG5PqiFdGUWO5IlUsNvcFYQQkPpBDfTATUhYkEzEWRQ/viewform
+```
+]
 
 ---
 
