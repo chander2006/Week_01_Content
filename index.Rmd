@@ -981,6 +981,29 @@ The `seq` function has many different usages. Read the vignette to get a better 
 
 class: content-slide
 
+# Another Function Example
+
+Let's explore the `sample` function. Take a look at the vignette for it. What does it do? What are its arguments?
+
+Here's a simple example of how we might use the `sample` function:
+
+```{r}
+coin <- c("H", "T")
+
+sample(coin, size = 10, replace = TRUE)
+```
+
+```{r}
+dice <- 1:6
+
+sample(dice, size = 6)
+```
+
+
+---
+
+class: content-slide
+
 # Data types
 
 So far, we've worked with a variety of numbers in our exercises. There are different *kinds* of numbers, though. Beyond that, we may not always work with numbers. There are 6 basic data types. In this course, we'll use 4 of the data types consistently. In fact, we've already touched on 3 of them. The six data types are:
@@ -1164,7 +1187,7 @@ So far, we have only worked with values that are either logical or numeric. Howe
 
 An object is considered a character when it is encapsulated by quotation marks. For example, `"September"` would be considered a character.
 
-```{r, eval=FALSE}
+```{r, results='hide'}
 months_of_the_year <- c("January", "February", "March", "April", "May", "June",
                         "July", "August", "September", "October", "November", "December")
 
@@ -1338,7 +1361,7 @@ class: content-slide
 
 Data frames are the bread and butter of the work that we will be doing in this course. These are 2-dimensional, heterogenous data structures. From a practical perspective, data frames are composed of multiple vectors of the same length.
 
-```{r, error=TRUE}
+```{r, results='hide'}
 months_df <- 
   data.frame(months = months_of_the_year,
              month_number = 1:12)
