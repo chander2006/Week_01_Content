@@ -21,6 +21,14 @@
     <script src="index_files/freezeframe/freezeframe.min.js"></script>
     <script src="index_files/xaringanExtra-freezeframe/freezeframe-init.js"></script>
     <script id="xaringanExtra-freezeframe-options" type="application/json">{"selector":"img[src$=\"gif\"]","trigger":"click","overlay":false,"responsive":true,"warnings":true}</script>
+    <script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+    <script src="index_files/plotly-binding/plotly.js"></script>
+    <script src="index_files/typedarray/typedarray.min.js"></script>
+    <script src="index_files/jquery/jquery.min.js"></script>
+    <link href="index_files/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="index_files/crosstalk/js/crosstalk.min.js"></script>
+    <link href="index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="index_files/plotly-main/plotly-latest.min.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -76,8 +84,7 @@ alt="Ryan Harrington"&gt;
 
 .pull-right[
 ### Tech Impact
-Data Innovation Lab
-Director, Stategy &amp; Operations
+Data Innovation Lab, Director, Strategy &amp; Operations
 
 ### CompassRed
 Lead Data Scientist
@@ -152,7 +159,7 @@ class: content-slide
 
 # Course Syllabus
 
-You can read the full course syllabus [here](https://udel.instructure.com/courses/1595325/assignments/syllabus).
+You can read the full course syllabus [here](https://udel.instructure.com/courses/1626501/assignments/syllabus).
 
 Key things we'll cover:
 
@@ -194,12 +201,12 @@ class: content-slide
 
 ## Grading
 
-<div id="udmuhtnuls" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hivsjognry" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: Roboto;
 }
 
-#udmuhtnuls .gt_table {
+#hivsjognry .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -224,7 +231,7 @@ class: content-slide
   border-left-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_heading {
+#hivsjognry .gt_heading {
   background-color: #006096;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -236,7 +243,7 @@ class: content-slide
   border-right-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_title {
+#hivsjognry .gt_title {
   color: #FFFFFF;
   font-size: 125%;
   font-weight: bold;
@@ -248,7 +255,7 @@ class: content-slide
   border-bottom-width: 0;
 }
 
-#udmuhtnuls .gt_subtitle {
+#hivsjognry .gt_subtitle {
   color: #FFFFFF;
   font-size: 85%;
   font-weight: initial;
@@ -260,13 +267,13 @@ class: content-slide
   border-top-width: 0;
 }
 
-#udmuhtnuls .gt_bottom_border {
+#hivsjognry .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_col_headings {
+#hivsjognry .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -281,7 +288,7 @@ class: content-slide
   border-right-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_col_heading {
+#hivsjognry .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -301,7 +308,7 @@ class: content-slide
   overflow-x: hidden;
 }
 
-#udmuhtnuls .gt_column_spanner_outer {
+#hivsjognry .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -313,15 +320,15 @@ class: content-slide
   padding-right: 4px;
 }
 
-#udmuhtnuls .gt_column_spanner_outer:first-child {
+#hivsjognry .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#udmuhtnuls .gt_column_spanner_outer:last-child {
+#hivsjognry .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#udmuhtnuls .gt_column_spanner {
+#hivsjognry .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -333,7 +340,7 @@ class: content-slide
   width: 100%;
 }
 
-#udmuhtnuls .gt_group_heading {
+#hivsjognry .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -358,7 +365,7 @@ class: content-slide
   vertical-align: middle;
 }
 
-#udmuhtnuls .gt_empty_group_heading {
+#hivsjognry .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -373,15 +380,15 @@ class: content-slide
   vertical-align: middle;
 }
 
-#udmuhtnuls .gt_from_md > :first-child {
+#hivsjognry .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#udmuhtnuls .gt_from_md > :last-child {
+#hivsjognry .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#udmuhtnuls .gt_row {
+#hivsjognry .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -400,7 +407,7 @@ class: content-slide
   overflow-x: hidden;
 }
 
-#udmuhtnuls .gt_stub {
+#hivsjognry .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -413,7 +420,7 @@ class: content-slide
   padding-right: 5px;
 }
 
-#udmuhtnuls .gt_stub_row_group {
+#hivsjognry .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -427,11 +434,11 @@ class: content-slide
   vertical-align: top;
 }
 
-#udmuhtnuls .gt_row_group_first td {
+#hivsjognry .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#udmuhtnuls .gt_summary_row {
+#hivsjognry .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -441,16 +448,16 @@ class: content-slide
   padding-right: 5px;
 }
 
-#udmuhtnuls .gt_first_summary_row {
+#hivsjognry .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_first_summary_row.thick {
+#hivsjognry .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#udmuhtnuls .gt_last_summary_row {
+#hivsjognry .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -460,7 +467,7 @@ class: content-slide
   border-bottom-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_grand_summary_row {
+#hivsjognry .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -470,7 +477,7 @@ class: content-slide
   padding-right: 5px;
 }
 
-#udmuhtnuls .gt_first_grand_summary_row {
+#hivsjognry .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -480,11 +487,11 @@ class: content-slide
   border-top-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_striped {
+#hivsjognry .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#udmuhtnuls .gt_table_body {
+#hivsjognry .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -493,7 +500,7 @@ class: content-slide
   border-bottom-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_footnotes {
+#hivsjognry .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -507,7 +514,7 @@ class: content-slide
   border-right-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_footnote {
+#hivsjognry .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -516,7 +523,7 @@ class: content-slide
   padding-right: 5px;
 }
 
-#udmuhtnuls .gt_sourcenotes {
+#hivsjognry .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -530,7 +537,7 @@ class: content-slide
   border-right-color: #D3D3D3;
 }
 
-#udmuhtnuls .gt_sourcenote {
+#hivsjognry .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -538,60 +545,60 @@ class: content-slide
   padding-right: 5px;
 }
 
-#udmuhtnuls .gt_left {
+#hivsjognry .gt_left {
   text-align: left;
 }
 
-#udmuhtnuls .gt_center {
+#hivsjognry .gt_center {
   text-align: center;
 }
 
-#udmuhtnuls .gt_right {
+#hivsjognry .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#udmuhtnuls .gt_font_normal {
+#hivsjognry .gt_font_normal {
   font-weight: normal;
 }
 
-#udmuhtnuls .gt_font_bold {
+#hivsjognry .gt_font_bold {
   font-weight: bold;
 }
 
-#udmuhtnuls .gt_font_italic {
+#hivsjognry .gt_font_italic {
   font-style: italic;
 }
 
-#udmuhtnuls .gt_super {
+#hivsjognry .gt_super {
   font-size: 65%;
 }
 
-#udmuhtnuls .gt_footnote_marks {
+#hivsjognry .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#udmuhtnuls .gt_asterisk {
+#hivsjognry .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#udmuhtnuls .gt_slash_mark {
+#hivsjognry .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#udmuhtnuls .gt_fraction_numerator {
+#hivsjognry .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#udmuhtnuls .gt_fraction_denominator {
+#hivsjognry .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -678,7 +685,11 @@ class: content-slide
 
 # Who is in this course?
 
-&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" title="Bubble chart demonstratign skill level of participants in the Foundations of R course" alt="Bubble chart demonstratign skill level of participants in the Foundations of R course" width="100%" /&gt;
+#### Skill Level of Foundations of R Course Participants
+As of *March 14, 2022* at *12:04 AM*
+
+<div id="htmlwidget-6c45226c141fb41a672c" style="width:100%;height:350px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6c45226c141fb41a672c">{"x":{"data":[{"x":[1,2,1,1,1,3,1,1,2,3,1,2,3,2,2,1,2,3,2,4],"y":[5,1,4,6,8,9,1,2,2,2,3,3,3,4,6,7,7,7,8,9],"text":["3 students","2 students","2 students","2 students","2 students","2 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students","1 students"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,96,150,1)","opacity":1,"size":[22.6771653543307,17.1421753925017,17.1421753925017,17.1421753925017,17.1421753925017,17.1421753925017,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512,3.77952755905512],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,96,150,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":34.7866927592955,"r":7.30593607305936,"b":34.1291585127202,"l":320.730593607306},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,4.6],"tickmode":"array","ticktext":["No experience","Basic","Intermediate","Advanced"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["No experience","Basic","Intermediate","Advanced"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,9.6],"tickmode":"array","ticktext":["Machine learning techniques","Statistical modeling techniques","Descriptive statistics","Another programming language","R","git","SPSS, JMP, Stata or similar statistics modeling tools","SQL","Excel (or a similar spreadsheet tool)"],"tickvals":[1,2,3,4,5,6,7,8,9],"categoryorder":"array","categoryarray":["Machine learning techniques","Statistical modeling techniques","Descriptive statistics","Another programming language","R","git","SPSS, JMP, Stata or similar statistics modeling tools","SQL","Excel (or a similar spreadsheet tool)"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"source":"A","attrs":{"7abb345faf94":{"x":{},"y":{},"size":{},"text":{},"type":"scatter"}},"cur_data":"7abb345faf94","visdat":{"7abb345faf94":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 
 
 ---
@@ -785,7 +796,7 @@ class: content-slide
 -   **Markdown**
     -   Text that is not evaluated as code
     -   Basic formatting of text is possible, from **bolding** and *italicizing* text to utilizing lists
-    -   It is possible to include `code` inline with the markdown that will be evaluated when the document is “knit". For example: 2022-03-13]
+    -   It is possible to include `code` inline with the markdown that will be evaluated when the document is “knit". For example: 2022-03-14]
 
 .pull-right[
 -   **Code Chunks**
@@ -1829,8 +1840,8 @@ class: content-slide
 Tonight we'll do a few things to get you started with using git:
 
 1. **Connect** your local machine to your remote account on GitHub
-2. **Fork** your own version of the `week_01` homework repository
-3. **Clone** the forked repository to your local machine
+2. **Create** your first homework assignment repository
+3. **Clone** the repository to your local machine
 
 ---
 
@@ -1862,7 +1873,8 @@ We're following along with [Happy Git with R](https://happygitwithr.com/hello-gi
 
 2. Enter the following commands:
 
-```
+
+```bash
 git config --global user.name 'Jane Doe'
 git config --global user.email 'jane@example.com'
 git config --global --list
@@ -1876,17 +1888,16 @@ class: content-slide
 
 ## 🍽 Fork a repository 
 
-1. Navigate to our [course organization on GitHub](https://github.com/UD-PCS-Foundations-of-R-Fall-2021)
+-  Open the [assignment URL](https://classroom.github.com/a/8DoUa_KP)
 
-2. Go to the [`week_01`](https://github.com/UD-PCS-Foundations-of-R-Fall-2021/week_01) repository
 
-3. Select `Fork` in the upper right hand corner
+```r
+https://classroom.github.com/a/8DoUa_KP
+```
 
-4. Select your personal profile to fork the code to. This is likely the only option you'll have!
+-  Accept the assignment.
 
-5. A new version of the code repository will now exist on your personal GitHub account. It will be named `&lt;your_user_name&gt;/week_01`
-
-6. You have successfully forked the repository!
+-  Open the newly created repository. It will be named `week-01-assignment-&lt;YOUR GITHUB USERNAME&gt;`.
 
 ---
 
@@ -1920,7 +1931,7 @@ Your homework assignment should now be on your local machine.
 
 Complete your assignment in the `Week_01_Assignment.Rmd` file.
 
-In normal weeks, your homework will be due by 5:59 pm on the day of the next class (i.e., this would normally be due 10/4 at 5:59 pm).
+In normal weeks, your homework will be due by 5:59 pm on the day of the next class (i.e., this would normally be due March 21, 2022 at 5:59 pm).
 
 For this week, we'll submit your assignment together at the beginning of the next class.
 
@@ -1944,6 +1955,26 @@ If you're running into any git trouble - now or throughout the course - try leav
 
 ---
 
+class: content-slide
+
+.center[
+### Take a few minutes to complete this brief survey during the week.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+# 📋 [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfN3sOBG5PqiFdGUWO5IlUsNvcFYQQkPpBDfTATUhYkEzEWRQ/viewform)
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+*If the link above is not working, copy this into your browser.*
+
+```r
+https://docs.google.com/forms/d/e/1FAIpQLSfN3sOBG5PqiFdGUWO5IlUsNvcFYQQkPpBDfTATUhYkEzEWRQ/viewform
+```
+]
+
+---
+
 class: title-slide, middle
 layout: false
 
@@ -1952,7 +1983,7 @@ layout: false
 ### Week 01: Understanding the R Programming Environment
 
 Ryan Harrington&lt;br&gt;
-September 27, 2021&lt;br&gt;
+March 14, 2022&lt;br&gt;
 University of Delaware&lt;br&gt;
 College of Professional &amp; Continuing Studies
     </textarea>
