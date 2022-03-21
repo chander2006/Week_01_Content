@@ -1,0 +1,116 @@
+---
+title: "Week 1 assignment"
+output: html_document
+date: '2022-03-20'
+---
+
+# Author: Chander Lekha
+
+#### Exercises
+
+#1.  *Explain coercion rules. Create an example that demonstrates the fixed order of the coercion rules.*
+
+# The coercion rules are [logical → integer → numeric → character]
+```{r}
+rand_logicalVal <- runif(10) <0.7
+
+typeof(rand_logicalVal)
+is.logical(rand_logicalVal)
+
+int_val <- as.integer(rand_logicalVal)
+
+typeof(int_val)
+is.integer(int_val)
+
+numeric_val <- as.numeric(int_val)
+
+typeof(numeric_val)
+is.numeric(numeric_val)
+
+char_val <- as.character(numeric_val)
+
+typeof(char_val)
+is.character(char_val)
+
+```
+
+#2.  *The following code will generate a warning. Explain why.* 
+
+```{r}
+as.integer(c("one", "two", "three"))
+
+#### This does not follow the rule of coercion.This will not force non numeric/integer strings to integers.  The coercion rules are [logical → integer → numeric → character]
+```
+
+#3.  *Create a vector of a sequence of integers starting at 2, ending at 100, and increasing by 2. Assign the vector to an object called `evens`. Coerce the vector to be of type `integer`. Confirm that the vector is of type `integer`.*
+
+```{r}
+evens <- seq(from = 2L, to = 100L , by = 2L )
+
+typeof(evens)
+
+```
+
+#4.  *Create a vector of random numbers with a length equal to your vector in exercise 3. Use a seed with a value of `730` before creating your vector. Assign the vector to an object called `randoms`. Confirm the type of the vector.*
+
+```{r}
+
+set.seed(730)
+randoms <- seq(  from = 2, to = 100  , by = 2 )
+
+typeof(randoms)
+```
+
+#5.  *Create a vector demonstrating which values in exercise 4 are greater than `0.75`. Assign the vector to an object called `logicals`. Confirm the type of the vector.*
+
+```{r}
+logicals <- c(2:100,2) < 0.75
+
+typeof(logicals)
+print(logicals)
+```
+
+#6.  Create a data frame including the three vectors created in exercises 3 through 5. Assign it to an object following best practices for naming.
+
+```{r}
+evens <- seq(from = 2L, to = 100L , by = 2L )
+randoms <- seq(  from = 2, to = 100  , by = 2 )
+logicals <- c(2:100,2) < 0.75
+
+vec.data <- data.frame(even_num = evens,
+           randoms_data = randoms,
+           logical_data = logicals
+)
+```
+
+#7.  *Create a new object which is the sum of `evens` and `randoms` all divided by 3. Demonstrate how to calculate basic summary statistics for this new object (mean, median, minimum, maximum, standard deviation, variance).*
+
+```{r}
+evens <- seq(from = 2L, to = 100L , by = 2L )
+randoms <- seq(  from = 2, to = 100  , by = 2 )
+
+totalOfEvensAndRandoms <- (evens + randoms)/3
+
+print(totalOfEvensAndRandoms)
+
+mean(totalOfEvensAndRandoms)
+
+median(totalOfEvensAndRandoms); min(totalOfEvensAndRandoms); max(totalOfEvensAndRandoms); var(totalOfEvensAndRandoms)
+sd(totalOfEvensAndRandoms)
+```
+
+# 8.  *We discussed the idea that R is a "vectorized" language. Explain this concept. Why is it important?*
+### R is used to perform the very same operation on different data sets simultanously.
+
+
+
+# 9.  *Run the `sessionInfo` function in a chunk.*
+
+```{r}
+sessionInfo(package = NULL)
+```
+
+
+
+
+
